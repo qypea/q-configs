@@ -1,0 +1,8 @@
+startup_message off
+hardstatus alwayslastline
+hardstatus string '%{= kG}%-Lw%{= kW}%50> %n%f* %t%{= kG}%+Lw%<'
+multiuser on
+
+screen bash
+title "-"
+screen bash
