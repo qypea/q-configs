@@ -3,7 +3,11 @@ if has('mouse')
 endif
 
 hi clear SpellBad
+hi clear SpellCap
+hi clear SpellLocal
+hi clear SpellRare
 hi SpellBad cterm=underline
+hi SpellCap cterm=underline
 
 set hlsearch
 
