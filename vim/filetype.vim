@@ -9,4 +9,5 @@ augroup filetypedetect
    autocmd BufNewFile,BufRead Jamfile,Jamroot,*.jam set filetype=jam
    autocmd BufNewFile,BufRead *.bb,*.inc,*.conf set filetype=bitbake
    autocmd BufNewFile,BufRead *.ino set filetype=c
+   autocmd BufNewFile,BufRead *.tpp set filetype=cpp
 augroup END
