@@ -18,6 +18,10 @@ execute pathogen#infect()
 map <C-]> :call rtags#JumpTo(g:SAME_WINDOW)<CR>
 map <C-t> :call rtags#JumpBack()<CR>
 
+if filereadable(".dwbuild")
+    set makeprg=./.dwbuild
+endif
+
 
 " Lines from /etc/vim/vimrc(uncommented)
 if has("autocmd")
