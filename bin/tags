@@ -1,1 +1,1 @@
-ctags -R -f tags
+ctags -R -f tags --exclude=build --exclude=*.js
