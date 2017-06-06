@@ -3,6 +3,8 @@ hardstatus alwayslastline
 hardstatus string '%{= kG}%-Lw%{= kW}%50> %n%f* %t%{= kG}%+Lw%<'
 multiuser on
 
+defscrollback 100000
+
 screen bash
 title "-"
 screen bash
