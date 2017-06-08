@@ -15,9 +15,6 @@ set spell spelllang=en_us
 
 execute pathogen#infect()
 
-map <C-]> :call rtags#JumpTo(g:SAME_WINDOW)<CR>
-map <C-t> :call rtags#JumpBack()<CR>
-
 if filereadable(".dwbuild")
     set makeprg=./.dwbuild
 endif
