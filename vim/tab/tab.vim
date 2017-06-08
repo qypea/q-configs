@@ -10,3 +10,6 @@ syn match none /\t/		" don't highlight tabs
 syn match ExtraWhitespace /^  */	" hightlght spaces used for indent
 
 source ~/.vim/tab/common.vim
+
+" Inhibit tab space indent, which ends up being used in kernel code a lot
+syn match none /^\t\t*  */	" highlight tabs before a space
