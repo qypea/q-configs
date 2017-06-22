@@ -1,0 +1,4 @@
+#!/bin/sh
+
+find . -iname '*.c' -o -iname '*.h' | xargs Lindent
+rm *~
