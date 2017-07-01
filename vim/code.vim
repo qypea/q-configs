@@ -17,6 +17,10 @@ else
     if filereadable(".3space")
         source ~/.vim/tab/3space.vim
     else
-        source ~/.vim/tab/4space.vim
+        if filereadable(".2space")
+            source ~/.vim/tab/2space.vim
+        else
+            source ~/.vim/tab/4space.vim
+        endif
     endif
 endif
