@@ -1,3 +1,5 @@
 #!/bin/sh
 
-hexdump -C $1 > $1.hex
+for f in $*; do
+    hexdump -C $f > $f.hex
+done
