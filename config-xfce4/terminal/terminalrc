@@ -17,6 +17,13 @@ MiscTabPosition=GTK_POS_TOP
 MiscHighlightUrls=TRUE
 TitleMode=TERMINAL_TITLE_REPLACE
 MiscScrollAlternateScreen=TRUE
-ScrollingLines=1000000
-ColorPalette=#000000;#cc0000;#4e9a06;#c4a000;#3465a4;#75507b;#06989a;#d3d7cf;#555753;#ef2929;#8ae234;#fce94f;#739fcf;#ad7fa8;#34e2e2;#eeeeec
-
+ColorPalette=#000000000000;#aaaa00000000;#0000aaaa0000;#aaaa55550000;#00000000ffff;#aaaa0000aaaa;#0000aaaaaaaa;#aaaaaaaaaaaa;#555555555555;#ffff55555555;#5555ffff5555;#ffffffff5555;#273a273affff;#ffff5555ffff;#5555ffffffff;#ffffffffffff
+MiscBellUrgent=FALSE
+MiscMouseWheelZoom=TRUE
+MiscMiddleClickOpensUri=FALSE
+MiscCopyOnSelect=FALSE
+MiscDefaultWorkingDir=
+MiscRewrapOnResize=TRUE
+MiscUseShiftArrowsToScroll=FALSE
+MiscSlimTabs=FALSE
+ScrollingLines=100000
