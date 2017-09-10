@@ -2,16 +2,15 @@ if has('mouse')
  set mouse-=a
 endif
 
-hi clear SpellBad
-hi clear SpellCap
-hi clear SpellLocal
-hi clear SpellRare
-hi SpellBad cterm=underline
-hi SpellCap cterm=underline
-
 set hlsearch
 
 set spell spelllang=en_us
+highlight SpellBad None
+highlight SpellCap None
+highlight SpellLocal None
+highlight SpellRare None
+highlight SpellBad cterm=underline
+highlight SpellCap cterm=underline
 
 execute pathogen#infect()
 
