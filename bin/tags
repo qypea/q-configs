@@ -1,1 +1,6 @@
-ctags -R -f tags --exclude=build --exclude=*.js . $*
+#!/bin/sh
+
+ctags -R -f tags \
+	--exclude=build \
+	--langmap=c:.c.h.ino \
+	. $*
