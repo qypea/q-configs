@@ -2,7 +2,7 @@
 set autoindent smartindent              " turn on auto/smart indenting
 set smarttab                            " make <tab> and <backspace> smarter
 set backspace=eol,start,indent          " allow backspacing over indent, eol, & start
-set textwidth=78                        " screen in 80 columns wide, wrap at 78
+set textwidth=118                       " screen in 120 columns wide, wrap at 118
 filetype plugin indent on
 
 " Syntax matching
