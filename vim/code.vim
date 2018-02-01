@@ -11,6 +11,15 @@ highlight ExtraWhitespace ctermbg=darkgreen
 
 set formatoptions=tcqlron
 
+map <C-I> :pyf ~/bin/clang-format.py<cr>
+imap <C-I> <c-o>:pyf ~/bin/clang-format.py<cr>
+function! ClangFormatFile()
+  let l:lines="all"
+  pyf ~/bin/clang-format.py
+endfunction
+map <C-K> :.call ClangFormatFile()<cr>
+
+
 if filereadable(".kernel")
     source ~/.vim/tab/tab.vim
 else
@@ -24,6 +33,7 @@ else
                 source ~/.vim/tab/garbage.vim
             else
                 source ~/.vim/tab/4space.vim
+                "#autocmd BufWritePre *.h,*.cc,*.cpp call ClangFormatFile()
             endif
         endif
     endif
