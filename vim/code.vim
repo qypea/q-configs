@@ -11,8 +11,8 @@ highlight ExtraWhitespace ctermbg=darkgreen
 
 set formatoptions=tcqlron
 
-map <C-I> :py3f ~/bin/clang-format.py<cr>
-imap <C-I> <c-o>:py3f ~/bin/clang-format.py<cr>
+map <C-F> :py3f ~/bin/clang-format.py<cr>
+imap <C-F> <c-o>:py3f ~/bin/clang-format.py<cr>
 function! ClangFormatFile()
   let l:lines="all"
   py3f ~/bin/clang-format.py
