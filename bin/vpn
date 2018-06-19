@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+
+/opt/cisco/anyconnect/bin/vpn connect asa-vpn.picodigital.com
+title.sh vpn
+echo "Hit enter to disconnect"
+read a
+/opt/cisco/anyconnect/bin/vpn disconnect
