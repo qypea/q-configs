@@ -31,6 +31,9 @@ if has("autocmd")
   filetype plugin indent on
 endif
 
+set csprg=gtags-cscope
+cs add GTAGS
+
 set showcmd        " Show (partial) command in status line.
 set showmatch      " Show matching brackets.
 set autowrite      " Automatically save before commands like :next and :make
