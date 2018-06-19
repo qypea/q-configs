@@ -13,6 +13,7 @@
         <value type="int" value="1"/>
         <value type="int" value="3"/>
         <value type="int" value="15"/>
+        <value type="int" value="8"/>
         <value type="int" value="4"/>
         <value type="int" value="5"/>
         <value type="int" value="6"/>
@@ -49,11 +50,14 @@
     </property>
     <property name="plugin-5" type="string" value="clock">
       <property name="digital-format" type="string" value="%T"/>
+      <property name="timezone" type="string" value=""/>
     </property>
     <property name="plugin-6" type="string" value="systray">
       <property name="names-visible" type="array">
         <value type="string" value="thunar"/>
         <value type="string" value="vlc"/>
+        <value type="string" value="kbackup"/>
+        <value type="string" value="nitroshare"/>
         <value type="string" value="networkmanager applet"/>
         <value type="string" value="steam"/>
         <value type="string" value="yumex"/>
@@ -63,11 +67,14 @@
         <value type="string" value="xfce4-power-manager"/>
         <value type="string" value="xfce-bluetooth-agent"/>
         <value type="string" value="teamviewer"/>
+        <value type="string" value="kwikdisk"/>
         <value type="string" value="slack"/>
+        <value type="string" value="javaembeddedframe"/>
       </property>
     </property>
     <property name="plugin-7" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+      <property name="mpris-players" type="string" value="vlc"/>
     </property>
     <property name="clipman" type="empty">
       <property name="settings" type="empty">
@@ -84,5 +91,6 @@
     <property name="plugin-4" type="string" value="pager">
       <property name="rows" type="uint" value="2"/>
     </property>
+    <property name="plugin-8" type="string" value="xfce4-timer"/>
   </property>
 </channel>
