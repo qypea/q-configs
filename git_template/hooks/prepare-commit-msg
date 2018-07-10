@@ -1,0 +1,24 @@
+#!/bin/sh
+
+COMMIT_MSG_FILE=$1
+COMMIT_SOURCE=$2
+SHA1=$3
+
+# Check that this is not an amend by checking if the first line is empty
+firstLine=$(head -n1 $1)
+if ! test -z "$firstLine"; then
+    return
+fi
+
+# Parse the current branch name for a ticket number
+ticket=$(git rev-parse --abbrev-ref HEAD | sed -ne "s:^[a-z]*/\([A-Z1-9]*-[0-9]*\)-.*$:\1:p")
+
+# If one was found drop it into the commit message
+if ! test -z "$ticket"; then
+    tmpfile=`mktemp`
+    echo "" > "$tmpfile"
+    echo "" >> "$tmpfile"
+    echo -n "$ticket" >> "$tmpfile"
+    cat "$COMMIT_MSG_FILE" >> "$tmpfile"
+    mv "$tmpfile" "$COMMIT_MSG_FILE"
+fi

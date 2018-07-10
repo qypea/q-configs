@@ -15,3 +15,6 @@ ln -s `pwd`/vimrc ~/.vimrc
 
 rm -rf ~/.vim
 ln -s `pwd`/vim ~/.vim
+
+rm -rf ~/.git_template
+ln -s `pwd`/git_template ~/.git_template
