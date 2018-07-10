@@ -18,6 +18,9 @@ if filereadable(".dwbuild")
     set makeprg=./.dwbuild
 endif
 
+let g:slimv_swank_cmd = '! screen -d -m -t REPL-SBCL sbcl --load ~/.vim/bundle/slimv/slime/start-swank.lisp'
+let g:paredit_mode = 0
+
 
 " Lines from /etc/vim/vimrc(uncommented)
 if has("autocmd")

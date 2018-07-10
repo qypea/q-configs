@@ -1,3 +1,6 @@
 [submodule "vim/bundle/vim-rtags"]
 	path = vim/bundle/vim-rtags
 	url = https://github.com/lyuts/vim-rtags
+[submodule "vim/bundle/slimv"]
+	path = vim/bundle/slimv
+	url = https://github.com/kovisoft/slimv.git
