@@ -1,6 +1,11 @@
-#!/bin/sh
+#!/bin/bash
 
 ctags -R -f tags \
+        --languages=C,C++ \
 	--exclude=build \
-	--langmap=c:.c.h.ino \
+	--langmap=c:.c.h.ino,c++:.cpp.hpp.tpp \
+        --extra=+q \
 	. $*
+
+#        --C\+\+−kinds=+p \
+
