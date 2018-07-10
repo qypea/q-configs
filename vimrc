@@ -12,6 +12,8 @@ highlight SpellRare None
 highlight SpellBad cterm=underline
 highlight SpellCap cterm=underline
 
+set wildmode=longest,list
+
 execute pathogen#infect()
 
 if filereadable(".dwbuild")
