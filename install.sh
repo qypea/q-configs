@@ -18,3 +18,6 @@ ln -s `pwd`/vim ~/.vim
 
 rm -rf ~/.git_template
 ln -s `pwd`/git_template ~/.git_template
+
+rm -rf ~/.gitconfig
+ln -s `pwd`/gitconfig ~/.gitconfig

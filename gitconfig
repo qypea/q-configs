@@ -1,0 +1,7 @@
+[user]
+	name = David Winn
+	email = q@qypea.com
+[log]
+	decorate = 1
+[push]
+	default = simple
