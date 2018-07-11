@@ -14,4 +14,7 @@ export NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
 
 export DEB_MACHS="leviathan.local ntp.local routepi.local"
 
+export GOPATH="$HOME/.go"
+export PATH="$PATH:$GOPATH/bin"
+
 ssh-add .ssh/id_rsa 2>>/dev/null
