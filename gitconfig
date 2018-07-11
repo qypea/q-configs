@@ -5,3 +5,5 @@
 	decorate = 1
 [push]
 	default = simple
+[alias]
+	smu = "submodule update --init --recursive"
