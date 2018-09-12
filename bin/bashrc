@@ -5,8 +5,13 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
 # User specific aliases and functions
 alias vi=vim
+
+export JAVA_HOME=/usr/java/jdk1.8.0_45
 
 export NPM_PACKAGES="$HOME/.npm"
 export PATH="$NPM_PACKAGES/bin:$PATH"
