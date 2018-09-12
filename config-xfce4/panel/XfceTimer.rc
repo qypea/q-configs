@@ -1,15 +1,15 @@
 [G0]
-timername=Bootup
-time=240
-timercommand=
-timerinfo=4m 0s
-is_countdown=true
-
-[G1]
 timername=Stretch
 time=2700
 timercommand=
 timerinfo=45m 0s
+is_countdown=true
+
+[G1]
+timername=10m
+time=600
+timercommand=
+timerinfo=10m 0s
 is_countdown=true
 
 [others]
