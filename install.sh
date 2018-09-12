@@ -3,6 +3,7 @@
 STOWCMD="stow --target=$HOME"
 
 $STOWCMD vim-configs
+$STOWCMD git-configs
 
 rm -rf ~/bin
 ln -s `pwd`/bin ~/bin
@@ -13,9 +14,3 @@ ln -s `pwd`/config-xfce4 ~/.config/xfce4
 
 rm ~/.screenrc
 ln -s `pwd`/screenrc ~/.screenrc
-
-rm -rf ~/.git_template
-ln -s `pwd`/git_template ~/.git_template
-
-rm -rf ~/.gitconfig
-ln -s `pwd`/gitconfig ~/.gitconfig
