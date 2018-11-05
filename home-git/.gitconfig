@@ -2,7 +2,9 @@
 	name = David Winn
 	email = q@qypea.com
 [log]
-	decorate = 1
+	decorate = short
+[diff]
+	submodule = log
 [push]
 	default = simple
 [alias]
