@@ -8,4 +8,5 @@
 [push]
 	default = simple
 [alias]
+	rgrep = "!f() { gitgreptmp=\"$1\"; { git --no-pager grep \"$gitgreptmp\" & git submodule foreach --recursive \"git --no-pager grep \\\"$gitgreptmp\\\" || true\"; } }; f"
 	smu = "submodule update --init --recursive"
