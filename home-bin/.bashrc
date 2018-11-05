@@ -22,4 +22,7 @@ export DEB_MACHS="leviathan.local ntp.local routepi.local"
 export GOPATH="$HOME/.go"
 export PATH="$PATH:$GOPATH/bin"
 
+export LEDGER_FILE="/home/q/docs/ledger/ledger.ldg"
+export LEDGER_PRICE_DB="/home/q/docs/ledger/prices.db"
+
 ssh-add .ssh/id_rsa 2>>/dev/null
