@@ -1,0 +1,5 @@
+{
+     "cmd": "make",
+     "errorMatch" : ["(?<file>[\\/0-9a-zA-Z\\._]+):(?<line>\\d+):(?<col>\\d+):\\s+error:(?<message>.+)"],
+     "warningMatch" : ["(?<file>[\\/0-9a-zA-Z\\._]+):(?<line>\\d+):(?<col>\\d+):\\s+warning:(?<message>.+)"]
+}
