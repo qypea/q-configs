@@ -13,7 +13,6 @@
         <value type="int" value="1"/>
         <value type="int" value="3"/>
         <value type="int" value="15"/>
-        <value type="int" value="8"/>
         <value type="int" value="4"/>
         <value type="int" value="5"/>
         <value type="int" value="6"/>
@@ -64,6 +63,7 @@
         <value type="string" value="qjackctl"/>
         <value type="string" value="seapplet"/>
         <value type="string" value="klipper"/>
+        <value type="string" value="qsynth"/>
         <value type="string" value="clipman"/>
         <value type="string" value="xfce4-power-manager"/>
         <value type="string" value="xfce-bluetooth-agent"/>
@@ -75,7 +75,7 @@
     </property>
     <property name="plugin-7" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="vlc"/>
+      <property name="mpris-players" type="string" value="vlc;vlc.instance22659;vlc.instance22845"/>
     </property>
     <property name="clipman" type="empty">
       <property name="settings" type="empty">
