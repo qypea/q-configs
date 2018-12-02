@@ -14,6 +14,9 @@ else if test -e "$input"; then
    tmp=`mktemp --suffix=.mp3`
    lame --quiet "$input" -V 4 "$tmp"
    mv "$tmp" "$input"
+
+   echo "Setting gain level"
+   mp3gain -r "$input"
 else
    echo "Invalid input $input. Please specify a directory or file"
    exit 1

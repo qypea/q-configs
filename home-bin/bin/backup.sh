@@ -1,14 +1,31 @@
-#!/bin/sh
+#!/bin/bash
+
+set -e
+set -u
+set -x
 
 /home/q/bin/title.sh backup
 
-mkdir /tmp/backups
-sshfs leviathan:backups/samba /tmp/backups/
+remoteHost="leviathan.local"
+remoteDir="/home/q/backups/sphinx"
+backupCount="2"
+localDir="/home/q"
 
-rm -rf /home/q/.macromedia/Flash_Player
-kbackup --auto /home/q/.mybackup.kbp
+rsync -av --delete --delete-after ${localDir} ${remoteHost}:${remoteDir}/current
 
-fusermount -u /tmp/backups
-rmdir /tmp/backups
+ssh ${remoteHost} <<EOF
+cd ${remoteDir}
+if test -e backup.${backupCount}; then
+    rm -rf backup.${backupCount}
+fi
+i=${backupCount}
+while [[ \$i -gt 1 ]]; do
+    if test -e backup.\$(( \$i - 1 )); then
+        mv backup.\$(( \$i - 1 )) backup.\$i
+    fi
+    i=\$(( \$i - 1 ))
+done
 
-/home/q/bin/sync_media.sh
+# TODO: --link if possible with encfs by disabling "External IV Chaining"
+cp -ra current backup.1
+EOF
