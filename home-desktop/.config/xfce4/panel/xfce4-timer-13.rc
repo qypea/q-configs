@@ -1,0 +1,23 @@
+[G0]
+timername=Stretch
+time=2700
+timercommand=
+timerinfo=45m 0s
+is_countdown=true
+
+[G1]
+timername=10m
+time=600
+timercommand=
+timerinfo=10m 0s
+is_countdown=true
+
+[others]
+nowin_if_alarm=false
+selecting_starts=true
+use_global_command=false
+global_command=
+repeat_alarm=false
+repetitions=1
+repeat_interval=10
+

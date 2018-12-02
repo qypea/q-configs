@@ -28,7 +28,13 @@ MiscSlimTabs=FALSE
 ScrollingLines=100000
 MiscShowRelaunchDialog=TRUE
 MiscNewTabAdjacent=FALSE
-ColorForeground=#000000
-ColorBackground=#ffffff
-ColorPalette=#000000;#cd0000;#00cd00;#cdcd00;#0000cd;#cd00cd;#00cdcd;#e5e5e5;#7f7f7f;#ff0000;#00ff00;#ffff00;#5c5cff;#ff00ff;#00ffff;#ffffff
+ColorForeground=#b7b7b7
+ColorBackground=#131926
+ColorCursor=#0f4999
+ColorBold=#ffffff
+ColorBoldUseDefault=FALSE
+ColorPalette=#000000;#aa0000;#44aa44;#aa5500;#0039aa;#aa22aa;#1a92aa;#aaaaaa;#777777;#ff8787;#4ce64c;#ded82c;#295fcc;#cc58cc;#4ccce6;#ffffff
+TabActivityColor=#0f4999
+ColorSelection=#163b59
+ColorSelectionUseDefault=FALSE
 
