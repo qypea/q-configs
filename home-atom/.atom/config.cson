@@ -1,15 +1,22 @@
 "*":
+  "autocomplete-clang": {}
+  "autocomplete-plus":
+    autoActivationDelay: 100
+    confirmCompletion: "tab always, enter when suggestion explicitly selected"
+    enableAutoConfirmSingleSuggestion: false
   build:
     matchedErrorFailsBuild: false
+    refreshOnShowTargetList: true
     saveOnBuild: true
     scrollOnError: true
   "build-make":
     useMake: true
+  "clang-format":
+    fallbackStyle: "WebKit"
   core:
     closeEmptyWindows: false
     disabledPackages: [
       "open-on-github"
-      "linter-clang"
       "build-make"
     ]
     projectHome: "/home/q"
@@ -29,23 +36,13 @@
   "git-blame":
     colorCommitAuthors: true
     ignoreWhiteSpaceDiffs: true
+  "linter-clang":
+    clangDefaultCFlags: "-Wall -Wextra -Wno-unused-parameter"
+    clangDefaultCppFlags: "-Wall -std=c++11 -Wextra -Wno-unused-parameter"
   "linter-ui-default":
     showPanel: true
   "spell-check":
     addKnownWords: true
-    grammars: [
-      "source.asciidoc"
-      "source.gfm"
-      "text.git-commit"
-      "text.plain"
-      "text.plain.null-grammar"
-      "source.rst"
-      "text.restructuredtext"
-      "source.cpp"
-      "source.c"
-      "source.sh"
-      "source.makefile"
-    ]
     knownWords: [
       "cout"
       "endl"
