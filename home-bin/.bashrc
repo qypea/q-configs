@@ -1,15 +1,17 @@
 # .bashrc
 
 # Source global definitions
-if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
-fi
+source /etc/bash.bashrc
+
+force_color_prompt=yes
+source /etc/skel/.bashrc
 
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
 
 # User specific aliases and functions
 alias vi=vim
+export EDITOR=vim
 
 export JAVA_HOME=/usr/java/jdk1.8.0_45
 
@@ -19,8 +21,7 @@ export NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
 
 export DEB_MACHS="leviathan.local ntp.local routepi.local"
 
-export GOPATH="$HOME/.go"
-export PATH="$PATH:$GOPATH/bin"
+export PATH="$PATH:$HOME/bin"
 
 export LEDGER_FILE="/home/q/docs/ledger/ledger.ldg"
 export LEDGER_PRICE_DB="/home/q/docs/ledger/prices.db"
