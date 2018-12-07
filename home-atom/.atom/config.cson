@@ -9,15 +9,17 @@
     refreshOnShowTargetList: true
     saveOnBuild: true
     scrollOnError: true
+  "build-cmake":
+    buildRoot: "${projectDir}/build/${name}"
   "build-make":
     useMake: true
   "clang-format":
     fallbackStyle: "WebKit"
+    formatCPlusPlusOnSave: true
   core:
     closeEmptyWindows: false
     disabledPackages: [
       "open-on-github"
-      "build-make"
     ]
     projectHome: "/home/q"
     telemetryConsent: "limited"
@@ -41,6 +43,8 @@
     clangDefaultCppFlags: "-Wall -std=c++11 -Wextra -Wno-unused-parameter"
   "linter-ui-default":
     showPanel: true
+  "markdown-preview":
+    useGitHubStyle: true
   "spell-check":
     addKnownWords: true
     knownWords: [
