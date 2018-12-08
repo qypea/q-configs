@@ -8,24 +8,8 @@ set -x
 
 remoteHost="leviathan.local"
 remoteDir="/home/q/backups/sphinx"
-backupCount="2"
 localDir="/home/q"
 
-rsync -av --delete --delete-after ${localDir} ${remoteHost}:${remoteDir}/current
-
-ssh ${remoteHost} <<EOF
-cd ${remoteDir}
-if test -e backup.${backupCount}; then
-    rm -rf backup.${backupCount}
-fi
-i=${backupCount}
-while [[ \$i -gt 1 ]]; do
-    if test -e backup.\$(( \$i - 1 )); then
-        mv backup.\$(( \$i - 1 )) backup.\$i
-    fi
-    i=\$(( \$i - 1 ))
-done
-
-# TODO: --link if possible with encfs by disabling "External IV Chaining"
-cp -ra current backup.1
-EOF
+ssh ${remoteHost} "rsync -av --delete --delete-after ${remoteDir}/backup.1/* ${remoteDir}/backup.2"
+ssh ${remoteHost} "rsync -av --delete --delete-after ${remoteDir}/backup.0/* ${remoteDir}/backup.1"
+rsync -av --delete --delete-after ${localDir} ${remoteHost}:${remoteDir}/backup.0
