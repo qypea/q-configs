@@ -12,3 +12,5 @@
 	smu = "submodule update --init --recursive"
 [init]
 	templatedir = ~/.git_template
+[color]
+	ui = auto
