@@ -4,7 +4,7 @@ set -e
 set -u
 set -x
 
-/home/q/bin/title.sh update
+title.sh update
 
 sudo apt autoclean
 sudo apt autoremove
