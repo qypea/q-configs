@@ -30,6 +30,7 @@
   editor:
     preferredLineLength: 120
     showIndentGuide: true
+    showInvisibles: true
     softWrap: true
     softWrapAtPreferredLineLength: true
     tabLength: 4
