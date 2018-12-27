@@ -72,7 +72,7 @@
     </property>
     <property name="plugin-11" type="string" value="clock">
       <property name="digital-format" type="string" value="%H:%M"/>
-      <property name="mode" type="uint" value="2"/>
+      <property name="mode" type="uint" value="4"/>
       <property name="tooltip-format" type="string" value=""/>
     </property>
     <property name="plugin-6" type="string" value="pager">
