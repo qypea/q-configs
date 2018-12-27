@@ -11,17 +11,17 @@
         <property name="startup-notify" type="empty"/>
       </property>
       <property name="&lt;Primary&gt;&lt;Alt&gt;Delete" type="empty"/>
-      <property name="&lt;Control&gt;&lt;Alt&gt;Escape" type="empty"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;l" type="empty"/>
       <property name="XF86Display" type="empty"/>
       <property name="&lt;Super&gt;p" type="empty"/>
       <property name="&lt;Primary&gt;Escape" type="empty"/>
+      <property name="XF86WWW" type="empty"/>
+      <property name="XF86Mail" type="empty"/>
+      <property name="&lt;Control&gt;&lt;Alt&gt;Escape" type="empty"/>
       <property name="XF86LogOff" type="empty"/>
       <property name="&lt;Control&gt;&lt;Alt&gt;L" type="empty"/>
       <property name="Print" type="empty"/>
       <property name="&lt;Alt&gt;Print" type="empty"/>
-      <property name="XF86WWW" type="empty"/>
-      <property name="XF86Mail" type="empty"/>
       <property name="XF86Calendar" type="empty"/>
       <property name="XF86Memo" type="empty"/>
       <property name="XF86Terminal" type="empty"/>
