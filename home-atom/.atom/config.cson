@@ -39,11 +39,12 @@
   "git-blame":
     colorCommitAuthors: true
     ignoreWhiteSpaceDiffs: true
+  "language-ledger":
+    ledgerBinary: "./bin/ledger"
   "linter-clang":
     clangDefaultCFlags: "-Wall -Wextra -Wno-unused-parameter"
     clangDefaultCppFlags: "-Wall -std=c++11 -Wextra -Wno-unused-parameter"
-  "linter-ui-default":
-    showPanel: true
+  "linter-ui-default": {}
   "markdown-preview":
     useGitHubStyle: true
   "spell-check":
