@@ -63,6 +63,7 @@
       <property name="XF86AudioPlay" type="string" value="vlc-proxy PlayPause"/>
       <property name="XF86AudioPrev" type="string" value="vlc-proxy Previous"/>
       <property name="&lt;Super&gt;grave" type="string" value="/home/q/bin/clicker.sh"/>
+      <property name="Super_L" type="string" value="xfce4-popup-whiskermenu"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
