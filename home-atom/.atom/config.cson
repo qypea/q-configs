@@ -1,4 +1,46 @@
 "*":
+  "atom-beautify":
+    apex: {}
+    arduino:
+      beautify_on_save: true
+    bash:
+      beautify_on_save: true
+    blade: {}
+    c:
+      beautify_on_save: true
+      default_beautifier: "clang-format"
+    cfml: {}
+    clj: {}
+    coffeescript: {}
+    cpp:
+      beautify_on_save: true
+      default_beautifier: "clang-format"
+    crystal: {}
+    cs: {}
+    css:
+      beautify_on_save: true
+    csv: {}
+    d: {}
+    ejs: {}
+    elm: {}
+    erb: {}
+    erlang: {}
+    fortran: {}
+    general:
+      _analyticsUserId: "1bf7e8b7-d845-4117-a645-39738e02df3f"
+    js:
+      beautify_on_save: true
+      break_chained_methods: true
+      end_with_comma: true
+      end_with_newline: true
+      indent_size: 2
+      jslint_happy: true
+    json:
+      beautify_on_save: true
+      indent_size: 2
+    markdown:
+      beautify_on_save: true
+      yaml: false
   "autocomplete-clang": {}
   "autocomplete-plus":
     autoActivationDelay: 100
@@ -36,6 +78,15 @@
     tabLength: 4
   "exception-reporting":
     userId: "49eb801d-9dd0-494b-a71e-7a886a0f40c8"
+  "formatter-jsbeautify":
+    css:
+      enable: false
+    html:
+      enable: false
+    less:
+      enable: false
+    sass:
+      enable: false
   "git-blame":
     colorCommitAuthors: true
     ignoreWhiteSpaceDiffs: true
@@ -44,7 +95,11 @@
   "linter-clang":
     clangDefaultCFlags: "-Wall -Wextra -Wno-unused-parameter"
     clangDefaultCppFlags: "-Wall -std=c++11 -Wextra -Wno-unused-parameter"
-  "linter-ui-default": {}
+  "linter-js-standard":
+    checkForEslintConfig: false
+    showEslintRules: true
+  "linter-ui-default":
+    showPanel: true
   "markdown-preview":
     useGitHubStyle: true
   "spell-check":
@@ -70,6 +125,9 @@
       "ifndef"
       "cpp"
     ]
+  "standard-formatter":
+    formatOnSave: true
+    honorPackageConfig: false
   "tree-view":
     hideVcsIgnoredFiles: true
     squashDirectoryNames: true
