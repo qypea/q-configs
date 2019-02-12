@@ -2,16 +2,22 @@
 
 set -e
 set -u
-set -x
 
 /home/q/bin/title.sh backup
 
-remoteHost="leviathan.local"
-remoteDir="/home/q/backups/sphinx"
 localDir="/home/q"
+remoteDir="sftp://leviathan.local//home/q/backups/sphinx/"
+common="--no-encryption --verbosity=info"
 
-date > ${localDir}/.lastbackup
+duplicity cleanup ${common} ${remoteDir}
 
-ssh ${remoteHost} "rsync -a --delete --delete-after ${remoteDir}/backup.1/* ${remoteDir}/backup.2"
-ssh ${remoteHost} "rsync -a --delete --delete-after ${remoteDir}/backup.0/* ${remoteDir}/backup.1"
-rsync -av --delete --delete-after ${localDir} ${remoteHost}:${remoteDir}/backup.0
+duplicity ${common} --full-if-older-than=90D \
+    --exclude /home/q/.ssb/flume --exclude /home/q/.ssb/blobs \
+    --exclude /home/q/.cache --exclude /home/q/.ccache \
+    --exclude /home/q/.atom/packages --exclude /home/q/.atom/.apm \
+    --exclude /home/q/.config/\*/Cache \
+    ${localDir} ${remoteDir}
+
+duplicity remove-older-than 90D ${common} --force ${remoteDir}
+
+duplicity collection-status ${common} ${remoteDir}

@@ -49,6 +49,8 @@
       <property name="square-icons" type="bool" value="false"/>
       <property name="symbolic-icons" type="bool" value="true"/>
       <property name="known-items" type="array">
+        <value type="string" value="software-update-available"/>
+        <value type="string" value="systray"/>
         <value type="string" value="steam"/>
         <value type="string" value="vlc"/>
         <value type="string" value="nm-applet"/>
@@ -56,6 +58,7 @@
       </property>
       <property name="hidden-items" type="array">
         <value type="string" value="blueman"/>
+        <value type="string" value="software-update-available"/>
       </property>
     </property>
     <property name="plugin-8" type="string" value="power-manager-plugin"/>
@@ -78,7 +81,6 @@
     <property name="plugin-6" type="string" value="pager">
       <property name="rows" type="uint" value="2"/>
     </property>
-    <property name="plugin-12" type="string" value="xfce4-clipman-plugin"/>
     <property name="plugin-13" type="string" value="xfce4-timer"/>
     <property name="clipman" type="empty">
       <property name="settings" type="empty">
@@ -90,6 +92,7 @@
         <property name="paste-on-activate" type="uint" value="2"/>
       </property>
     </property>
+    <property name="plugin-12" type="string" value="xfce4-clipman-plugin"/>
   </property>
   <property name="configver" type="int" value="2"/>
 </channel>
