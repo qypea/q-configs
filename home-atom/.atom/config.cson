@@ -91,7 +91,7 @@
     colorCommitAuthors: true
     ignoreWhiteSpaceDiffs: true
   "language-ledger":
-    ledgerBinary: "./bin/ledger"
+    ledgerBinary: "/home/q/docs/ledger/bin/ledger-trimmed-error.sh"
   "linter-clang":
     clangDefaultCFlags: "-Wall -Wextra -Wno-unused-parameter"
     clangDefaultCppFlags: "-Wall -std=c++11 -Wextra -Wno-unused-parameter"
