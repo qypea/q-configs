@@ -21,6 +21,7 @@ duplicity ${common} --full-if-older-than=30D \
     --exclude /home/q/.adobe \
     --exclude /home/q/.npm \
     --exclude /home/q/temp \
+    --exclude /home/q/.gkrellm2/data \
     ${localDir} ${remoteDir}
 
 duplicity remove-older-than 90D ${common} --force ${remoteDir}
