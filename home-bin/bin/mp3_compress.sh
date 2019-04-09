@@ -12,11 +12,11 @@ else if test -e "$input"; then
    # Recompress input
    echo "Recompressing: $input"
    tmp=`mktemp --suffix=.mp3`
-   lame --quiet "$input" -V 4 "$tmp"
+   lame --quiet "$input" -b 128 "$tmp"
    mv "$tmp" "$input"
 
    echo "Setting gain level"
-   mp3gain -r "$input"
+   mp3gain -q -c -r "$input"
 else
    echo "Invalid input $input. Please specify a directory or file"
    exit 1
