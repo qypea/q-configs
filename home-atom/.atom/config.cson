@@ -46,6 +46,8 @@
     autoActivationDelay: 100
     confirmCompletion: "tab always, enter when suggestion explicitly selected"
     enableAutoConfirmSingleSuggestion: false
+    moveToCancel: true
+    useAlternateScoring: false
   build:
     matchedErrorFailsBuild: false
     refreshOnShowTargetList: true
