@@ -59,11 +59,11 @@
       <property name="XF86WWW" type="string" value="exo-open --launch WebBrowser"/>
       <property name="XF86Calendar" type="string" value="orage"/>
       <property name="override" type="bool" value="true"/>
-      <property name="XF86AudioNext" type="string" value="vlc-proxy Next"/>
-      <property name="XF86AudioPlay" type="string" value="vlc-proxy PlayPause"/>
-      <property name="XF86AudioPrev" type="string" value="vlc-proxy Previous"/>
       <property name="Super_L" type="string" value="xfce4-popup-whiskermenu"/>
       <property name="&lt;Primary&gt;grave" type="string" value="/home/q/bin/clicker.sh"/>
+      <property name="XF86AudioNext" type="string" value="/home/q/bin/vlc-proxy Next"/>
+      <property name="XF86AudioPlay" type="string" value="/home/q/bin/vlc-proxy PlayPause"/>
+      <property name="XF86AudioPrev" type="string" value="/home/q/bin/vlc-proxy Previous"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
