@@ -6,7 +6,7 @@ set -u
 /home/q/bin/title.sh backup
 
 localDir="/home/q"
-remoteDir="sftp://leviathan.local//home/q/backups/sphinx/"
+remoteDir="sftp://leviathan//home/q/backups/sphinx/"
 common="--no-encryption --verbosity=info"
 
 duplicity cleanup ${common} ${remoteDir}

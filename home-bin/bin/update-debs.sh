@@ -2,4 +2,4 @@
 
 /home/q/bin/title.sh update-debs
 
-ssh -t leviathan.local "./bin/update.sh"
+ssh -t leviathan "./bin/update.sh"
