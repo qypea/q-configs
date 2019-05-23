@@ -58,6 +58,7 @@
   "build-make":
     useMake: true
   "clang-format":
+    executable: "clang-format-6.0"
     fallbackStyle: "WebKit"
     formatCPlusPlusOnSave: true
   core:
