@@ -1,3 +1,3 @@
 #!/bin/sh
 
-flock /tmp/build.lock $* || exit 1
+flock /tmp/build.lock time -p $* || exit 1
