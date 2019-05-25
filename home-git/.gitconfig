@@ -22,6 +22,6 @@
 [status]
 	submoduleSummary = true
 [core]
-	excludesfile = ~/.gitignore
+	excludesfile = ~/.gitexcludes
 [color]
 	ui = auto
