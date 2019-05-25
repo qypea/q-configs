@@ -3,14 +3,25 @@
 	email = q@qypea.com
 [log]
 	decorate = short
+	follow = true
 [diff]
 	submodule = log
 [push]
 	default = simple
+	recurseSubmodules = check
 [alias]
 	rgrep = "!f() { gitgreptmp=\"$1\"; { git --no-pager grep \"$gitgreptmp\" & git submodule foreach --recursive \"git --no-pager grep \\\"$gitgreptmp\\\" || true\"; } }; f"
 	smu = "submodule update --init --recursive"
 [init]
 	templatedir = ~/.git_template
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[status]
+	submoduleSummary = true
+[core]
+	excludesfile = ~/.gitignore
 [color]
 	ui = auto
