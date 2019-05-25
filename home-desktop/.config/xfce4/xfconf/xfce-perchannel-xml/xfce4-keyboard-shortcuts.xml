@@ -64,6 +64,8 @@
       <property name="XF86AudioNext" type="string" value="/home/q/bin/vlc-proxy Next"/>
       <property name="XF86AudioPlay" type="string" value="/home/q/bin/vlc-proxy PlayPause"/>
       <property name="XF86AudioPrev" type="string" value="/home/q/bin/vlc-proxy Previous"/>
+      <property name="F12" type="string" value="xfce4-screenshooter -f"/>
+      <property name="F11" type="string" value="xfce4-screenshooter -w"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

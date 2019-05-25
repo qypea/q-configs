@@ -1,5 +1,5 @@
 favorites=exo-terminal-emulator.desktop,firefox.desktop,thunderbird.desktop,atom.desktop,exo-file-manager.desktop
-recent=exo-terminal-emulator.desktop,exo-file-manager.desktop,mate-calc.desktop,gedit.desktop,atom.desktop,firefox.desktop,audacity.desktop,gnome-sudoku.desktop,gimp.desktop,org.gnome.DejaDup.desktop
+recent=exo-terminal-emulator.desktop,exo-file-manager.desktop,libreoffice-calc.desktop,atom.desktop,gedit.desktop,mate-calc.desktop,Human Resource Machine.desktop,steam.desktop,firefox.desktop,gpa.desktop
 button-title=Applications
 button-icon=xfce4-whiskermenu
 button-single-row=false
