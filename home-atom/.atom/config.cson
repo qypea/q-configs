@@ -66,6 +66,7 @@
       "open-on-github"
     ]
     projectHome: "/home/q"
+    restorePreviousWindowsOnStart: "no"
     telemetryConsent: "limited"
     themes: [
       "one-light-ui"
