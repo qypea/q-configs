@@ -6,14 +6,12 @@ set -u
 /home/q/bin/title.sh backup
 
 localDir="/home/q"
-remoteDir="sftp://leviathan//home/q/backups/sphinx/"
+remoteDir="sftp://leviathan//home/q/backups/firebug/"
 common="--no-encryption --verbosity=info"
 
 duplicity cleanup ${common} ${remoteDir}
 
 duplicity ${common} --full-if-older-than=30D \
-    --include /home/q/.ssb/secret --include /home/q/.ssb/gossip.json \
-    --exclude /home/q/.ssb \
     --exclude /home/q/.cache --exclude /home/q/.ccache \
     --exclude /home/q/.config/\*/Cache \
     --exclude /home/q/.thumbnails \
