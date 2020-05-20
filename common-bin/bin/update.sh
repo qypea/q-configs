@@ -3,8 +3,6 @@
 set -e
 set -u
 
-title.sh update
-
 sudo apt autoclean
 sudo apt autoremove
 sudo apt update
