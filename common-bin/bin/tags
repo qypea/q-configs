@@ -3,6 +3,7 @@
 ctags -R -f tags \
         --languages=C,C++ \
 	--exclude=build \
+	--exclude=oe-workdir \
 	--langmap=c:.c.h.ino,c++:.cpp.hpp.tpp \
         --extra=+q \
 	. $*
