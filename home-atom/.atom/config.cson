@@ -48,13 +48,17 @@
     enableAutoConfirmSingleSuggestion: false
     moveToCancel: true
     useAlternateScoring: false
+  "autocomplete-python":
+    useKite: false
+    useSnippets: "required"
   build:
     matchedErrorFailsBuild: false
     refreshOnShowTargetList: true
     saveOnBuild: true
     scrollOnError: true
   "build-cmake":
-    buildRoot: "${projectDir}/build/${name}"
+    buildCommandArgs: "-j8"
+    buildRoot: "${projectDir}/build"
   "build-make":
     useMake: true
   "clang-format":
@@ -82,6 +86,10 @@
     tabLength: 4
   "exception-reporting":
     userId: "49eb801d-9dd0-494b-a71e-7a886a0f40c8"
+  "file-types":
+    $caseSensitive: true
+    "**/*.initd": "source.shell"
+    "**/APKBUILD": "source.shell"
   "formatter-jsbeautify":
     css:
       enable: false
@@ -93,7 +101,11 @@
       enable: false
   "git-blame":
     colorCommitAuthors: true
+    columnWidth: 305
     ignoreWhiteSpaceDiffs: true
+    showLastNames: false
+  "ide-clangd":
+    clangdCommand: "clangd-8"
   "language-ledger":
     ledgerBinary: "/home/q/docs/ledger/bin/ledger-trimmed-error.sh"
   linter:
@@ -108,6 +120,9 @@
     showEslintRules: true
   "linter-pylint":
     executablePath: "pylint3"
+  "linter-shellcheck": {}
+  "linter-terraform-syntax":
+    newVersion: true
   "linter-ui-default":
     showPanel: true
   "markdown-preview":
@@ -115,6 +130,7 @@
   "python-autopep8":
     formatOnSave: true
     maxLineLength: 80
+  "python-tools": {}
   "spell-check":
     addKnownWords: true
     knownWords: [
@@ -137,6 +153,39 @@
       "enum"
       "ifndef"
       "cpp"
+      "HTTPS"
+      "GCM"
+      "json"
+      "urls"
+      "jpeg"
+      "TLS"
+      "http"
+      "https"
+      "url"
+      "jpg"
+      "uptime"
+      "tcp"
+      "rfid"
+      "ok"
+      "boolean"
+      "AES"
+      "zmq"
+      "decrypt"
+      "RSA"
+      "ramdisk"
+      "init"
+      "initrd"
+      "apkovl"
+      "gz"
+      "rootfs"
+      "EFI"
+      "userspace"
+      "GPT"
+      "ethernet"
+      "filesystem"
+      "SSL"
+      "LUKs"
+      "CryptSetup"
     ]
   "standard-formatter":
     formatOnSave: true
