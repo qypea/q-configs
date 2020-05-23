@@ -1,6 +1,6 @@
 delay=0
-region=2
-action=1
+region=1
+action=3
 show_mouse=0
 screenshot_dir=file:/home/q/temp
 app=gimp-2.8
