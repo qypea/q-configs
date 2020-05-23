@@ -1,5 +1,5 @@
-favorites=exo-terminal-emulator.desktop,firefox.desktop,thunderbird.desktop,atom.desktop,exo-file-manager.desktop
-recent=exo-terminal-emulator.desktop,exo-file-manager.desktop,libreoffice-calc.desktop,atom.desktop,gedit.desktop,mate-calc.desktop,Human Resource Machine.desktop,steam.desktop,firefox.desktop,gpa.desktop
+favorites=exo-terminal-emulator.desktop,firefox.desktop,thunderbird.desktop,exo-file-manager.desktop,slack.desktop,Zoom.desktop
+recent=exo-terminal-emulator.desktop,thunderbird.desktop,Firestone Idle RPG.desktop,gedit.desktop,firefox.desktop,exo-file-manager.desktop,minicom.desktop,slack.desktop,Zoom.desktop,mate-calc.desktop
 button-title=Applications
 button-icon=xfce4-whiskermenu
 button-single-row=false
