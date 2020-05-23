@@ -65,6 +65,7 @@
     closeEmptyWindows: false
     disabledPackages: [
       "open-on-github"
+      "linter-js-standard"
     ]
     projectHome: "/home/q"
     restorePreviousWindowsOnStart: "no"
@@ -74,7 +75,6 @@
       "one-light-syntax"
     ]
   editor:
-    preferredLineLength: 120
     showIndentGuide: true
     showInvisibles: true
     softWrap: true
@@ -96,16 +96,25 @@
     ignoreWhiteSpaceDiffs: true
   "language-ledger":
     ledgerBinary: "/home/q/docs/ledger/bin/ledger-trimmed-error.sh"
+  linter:
+    disabledProviders: [
+      "js-standard"
+    ]
   "linter-clang":
     clangDefaultCFlags: "-Wall -Wextra -Wno-unused-parameter"
     clangDefaultCppFlags: "-Wall -std=c++11 -Wextra -Wno-unused-parameter"
   "linter-js-standard":
     checkForEslintConfig: false
     showEslintRules: true
+  "linter-pylint":
+    executablePath: "pylint3"
   "linter-ui-default":
     showPanel: true
   "markdown-preview":
     useGitHubStyle: true
+  "python-autopep8":
+    formatOnSave: true
+    maxLineLength: 80
   "spell-check":
     addKnownWords: true
     knownWords: [
