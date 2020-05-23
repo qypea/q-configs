@@ -6,8 +6,8 @@ set -u
 /home/q/bin/title.sh backup
 
 localDir="/home/q"
-remoteDir="sftp://leviathan//home/q/backups/firebug/"
-common="--no-encryption --verbosity=info"
+remoteDir="sftp://leviathan.lan//home/q/backups/firebug/"
+common="--no-encryption --verbosity=warning"
 
 duplicity cleanup ${common} ${remoteDir}
 
@@ -20,8 +20,11 @@ duplicity ${common} --full-if-older-than=30D \
     --exclude /home/q/.npm \
     --exclude /home/q/temp \
     --exclude /home/q/.gkrellm2/data \
+    --exclude /home/q/.steam \
+    --exclude /home/q/.dbus \
+    --exclude /home/q/builds \
     ${localDir} ${remoteDir}
 
-duplicity remove-older-than 90D ${common} --force ${remoteDir}
+duplicity remove-older-than 45D ${common} --force ${remoteDir}
 
 duplicity collection-status ${common} ${remoteDir}
