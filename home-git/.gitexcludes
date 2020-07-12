@@ -1,3 +1,13 @@
 .*
 tags
 build
+oe-logs
+oe-workdir
+oe-local-files
+singletask.lock
+build-boot.sh
+compile_commands.json
+bin
+dwbuild.sh
+*.pyc
+*.pyo
