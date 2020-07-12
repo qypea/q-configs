@@ -4,6 +4,7 @@
   <property name="notify-location" type="uint" value="2"/>
   <property name="applications" type="empty">
     <property name="known_applications" type="array">
+      <value type="string" value="discord"/>
       <value type="string" value="Firefox"/>
       <value type="string" value="HandBrake"/>
       <value type="string" value="nm-applet"/>
@@ -24,4 +25,5 @@
   <property name="log-level" type="uint" value="0"/>
   <property name="log-level-apps" type="uint" value="0"/>
   <property name="expire-timeout" type="int" value="5"/>
+  <property name="do-not-disturb" type="bool" value="false"/>
 </channel>
