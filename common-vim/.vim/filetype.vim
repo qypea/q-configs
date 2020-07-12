@@ -13,5 +13,6 @@ augroup filetypedetect
    autocmd BufNewFile,BufRead *.tpp set filetype=cpp
    autocmd BufNewFile,BufRead CMakeLists.txt set filetype=cmake
    autocmd BufEnter COMMIT_EDITMSG set filetype=gitcommit
+   autocmd BufEnter TAG_EDITMSG set filetype=gitcommit
    autocmd BufEnter git-rebase-todo call setpos('.', [0, 1, 1, 0])
 augroup END
