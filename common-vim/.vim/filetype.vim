@@ -4,6 +4,7 @@ if exists("did_load_filetypes")
 endif
 
 augroup filetypedetect
+   autocmd BufNewFile,BufRead Jenkinsfile set filetype=groovy
    autocmd BufNewFile,BufRead *.shlib set filetype=sh
    autocmd BufNewFile,BufRead *.json set filetype=json
    autocmd BufNewFile,BufRead Jamfile,Jamroot,*.jam set filetype=jam
