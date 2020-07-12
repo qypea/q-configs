@@ -48,6 +48,7 @@
       <property name="square-icons" type="bool" value="false"/>
       <property name="symbolic-icons" type="bool" value="true"/>
       <property name="known-items" type="array">
+        <value type="string" value="discord1"/>
         <value type="string" value="Slack1"/>
         <value type="string" value="brasero"/>
         <value type="string" value="zoom"/>
@@ -68,7 +69,7 @@
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
       <property name="enable-mpris" type="bool" value="true"/>
       <property name="mixer-command" type="string" value="pavucontrol"/>
-      <property name="mpris-players" type="string" value="parole;vlc"/>
+      <property name="mpris-players" type="string" value="chromium.instance17638;chromium.instance22551;chromium.instance2269;chromium.instance2401;chromium.instance2507;chromium.instance27511;chromium.instance8390;parole;vlc;vlc.instance12780;vlc.instance12814;vlc.instance12846"/>
       <property name="show-notifications" type="bool" value="true"/>
     </property>
     <property name="plugin-10" type="string" value="separator">
