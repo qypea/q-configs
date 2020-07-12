@@ -3,8 +3,6 @@
 set -e
 set -u
 
-/home/q/bin/title.sh backup
-
 localDir="/home/q"
 remoteDir="sftp://leviathan.lan//home/q/backups/firebug/"
 common="--no-encryption --verbosity=warning"
