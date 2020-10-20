@@ -46,8 +46,9 @@
       <property name="mode-whitelist" type="bool" value="false"/>
       <property name="single-row" type="bool" value="false"/>
       <property name="square-icons" type="bool" value="false"/>
-      <property name="symbolic-icons" type="bool" value="true"/>
+      <property name="symbolic-icons" type="bool" value="false"/>
       <property name="known-items" type="array">
+        <value type="string" value="Microsoft Teams - Preview1"/>
         <value type="string" value="discord1"/>
         <value type="string" value="Slack1"/>
         <value type="string" value="brasero"/>
@@ -65,13 +66,6 @@
       </property>
     </property>
     <property name="plugin-8" type="string" value="power-manager-plugin"/>
-    <property name="plugin-9" type="string" value="pulseaudio">
-      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="enable-mpris" type="bool" value="true"/>
-      <property name="mixer-command" type="string" value="pavucontrol"/>
-      <property name="mpris-players" type="string" value="chromium.instance17638;chromium.instance22551;chromium.instance2269;chromium.instance2401;chromium.instance2507;chromium.instance27511;chromium.instance8390;parole;vlc;vlc.instance12780;vlc.instance12814;vlc.instance12846"/>
-      <property name="show-notifications" type="bool" value="true"/>
-    </property>
     <property name="plugin-10" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
       <property name="expand" type="bool" value="false"/>
@@ -95,8 +89,11 @@
         <property name="never-confirm-history-clear" type="bool" value="false"/>
       </property>
     </property>
-    <property name="plugin-12" type="string" value="xfce4-clipman-plugin"/>
     <property name="plugin-4" type="string" value="xfce4-clipman-plugin"/>
+    <property name="plugin-9" type="string" value="pulseaudio">
+      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+      <property name="mpris-players" type="string" value="chromium.instance14722;chromium.instance15459;chromium.instance1557;chromium.instance15996;chromium.instance17571;chromium.instance18258;chromium.instance18376;chromium.instance20526;chromium.instance21019;chromium.instance2115;chromium.instance21590;chromium.instance21845;chromium.instance22817;chromium.instance23494;chromium.instance23671;chromium.instance23776;chromium.instance25143;chromium.instance25415;chromium.instance25568;chromium.instance25683;chromium.instance2585;chromium.instance26469;chromium.instance26615;chromium.instance27432;chromium.instance27612;chromium.instance29099;chromium.instance29306;chromium.instance31283;chromium.instance32445;chromium.instance32475;chromium.instance3323;chromium.instance3615;chromium.instance3951;chromium.instance5105;chromium.instance6097;chromium.instance7278;firefox.instance12541;firefox.instance13686;firefox.instance1584;firefox.instance3384;firefox.instance7190;vlc"/>
+    </property>
   </property>
   <property name="configver" type="int" value="2"/>
 </channel>
