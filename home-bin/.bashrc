@@ -12,6 +12,7 @@ source /etc/skel/.bashrc
 # User specific aliases and functions
 alias vi=vim
 export EDITOR=vim
+export export PROMPT_DIRTRIM=2
 
 export JAVA_HOME=/usr/java/jdk1.8.0_45
 
