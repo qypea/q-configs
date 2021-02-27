@@ -11,3 +11,4 @@ bin
 dwbuild.sh
 *.pyc
 *.pyo
+!.gitignore
