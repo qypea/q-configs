@@ -6,7 +6,7 @@ endif
 augroup filetypedetect
    autocmd BufNewFile,BufRead Jenkinsfile set filetype=groovy
    autocmd BufNewFile,BufRead *.shlib set filetype=sh
-   autocmd BufNewFile,BufRead *.json set filetype=json
+   autocmd BufNewFile,BufRead *.json,*.geojson,*.gltf set filetype=json
    autocmd BufNewFile,BufRead Jamfile,Jamroot,*.jam set filetype=jam
    autocmd BufNewFile,BufRead *.bb,*.inc,*.conf set filetype=bitbake
    autocmd BufNewFile,BufRead *.ino set filetype=c
