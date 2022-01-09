@@ -4,7 +4,7 @@ set -e
 set -u
 
 localDir="/home/q"
-remoteDir="sftp://leviathan.lan//home/q/backups/firebug/"
+remoteDir="sftp://hydra.lan//home/q/backups/firebug/"
 common="--no-encryption --verbosity=warning"
 
 duplicity cleanup ${common} ${remoteDir}
