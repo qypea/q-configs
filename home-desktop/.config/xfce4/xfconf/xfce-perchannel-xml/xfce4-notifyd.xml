@@ -6,6 +6,7 @@
     <property name="known_applications" type="array">
       <value type="string" value="discord"/>
       <value type="string" value="Firefox"/>
+      <value type="string" value="fr.handbrake.ghb"/>
       <value type="string" value="HandBrake"/>
       <value type="string" value="nm-applet"/>
       <value type="string" value="notify-send"/>

@@ -1,5 +1,5 @@
-favorites=exo-terminal-emulator.desktop,firefox.desktop,thunderbird.desktop,exo-file-manager.desktop
-recent=exo-terminal-emulator.desktop,firefox.desktop,org.gnome.gedit.desktop,exo-file-manager.desktop,webex.desktop,mate-calc.desktop,vlc.desktop,libreoffice-calc.desktop,steam.desktop,Zoom.desktop
+favorites=exo-terminal-emulator.desktop,firefox.desktop,thunderbird.desktop,exo-file-manager.desktop,discord.desktop
+recent=exo-terminal-emulator.desktop,Melvor Idle.desktop,system-config-printer.desktop,exo-file-manager.desktop,vlc.desktop,xfburn.desktop,menulibre.desktop,org.gnome.gedit.desktop,firefox.desktop,Mindustry.desktop
 button-icon=xfce4-whiskermenu
 button-single-row=false
 show-button-title=false
