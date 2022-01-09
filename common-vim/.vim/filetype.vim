@@ -11,6 +11,7 @@ augroup filetypedetect
    autocmd BufNewFile,BufRead *.bb,*.inc,*.conf set filetype=bitbake
    autocmd BufNewFile,BufRead *.ino set filetype=c
    autocmd BufNewFile,BufRead *.tpp set filetype=cpp
+   autocmd BufRead,BufNewFile *.z80	set filetype=z80
    autocmd BufNewFile,BufRead CMakeLists.txt set filetype=cmake
    autocmd BufEnter COMMIT_EDITMSG set filetype=gitcommit
    autocmd BufEnter TAG_EDITMSG set filetype=gitcommit
