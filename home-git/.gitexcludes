@@ -7,7 +7,6 @@ oe-local-files
 singletask.lock
 build-boot.sh
 compile_commands.json
-bin
 dwbuild.sh
 *.pyc
 *.pyo
