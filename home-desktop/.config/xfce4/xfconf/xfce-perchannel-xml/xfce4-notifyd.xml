@@ -14,6 +14,7 @@
       <value type="string" value="org.gnome.Software"/>
       <value type="string" value="Slack"/>
       <value type="string" value="System Config Printer Notification"/>
+      <value type="string" value="teams"/>
       <value type="string" value="thunar"/>
       <value type="string" value="Thunar"/>
       <value type="string" value="Thunderbird"/>

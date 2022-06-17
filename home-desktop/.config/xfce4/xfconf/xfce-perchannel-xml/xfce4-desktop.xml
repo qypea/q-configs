@@ -28,7 +28,7 @@
         </property>
       </property>
       <property name="monitor0" type="empty">
-        <property name="image-path" type="string" value="/home/q/pics/backgrounds/cat girl.jpg"/>
+        <property name="image-path" type="string" value="/home/q/pics/backgrounds/coffee sip.jpg"/>
         <property name="image-show" type="bool" value="true"/>
         <property name="image-style" type="int" value="0"/>
         <property name="workspace0" type="empty">
@@ -72,7 +72,7 @@
         <property name="workspace0" type="empty">
           <property name="color-style" type="int" value="0"/>
           <property name="image-style" type="int" value="5"/>
-          <property name="last-image" type="string" value="/home/q/pics/backgrounds/cat girl.jpg"/>
+          <property name="last-image" type="string" value="/home/q/pics/backgrounds/dark matter filaments.jpg"/>
         </property>
         <property name="workspace1" type="empty">
           <property name="color-style" type="int" value="0"/>
@@ -84,7 +84,7 @@
         <property name="workspace0" type="empty">
           <property name="color-style" type="int" value="0"/>
           <property name="image-style" type="int" value="5"/>
-          <property name="last-image" type="string" value="/home/q/pics/backgrounds/cat girl.jpg"/>
+          <property name="last-image" type="string" value="/home/q/pics/backgrounds/dark matter filaments.jpg"/>
         </property>
         <property name="workspace1" type="empty">
           <property name="color-style" type="int" value="0"/>

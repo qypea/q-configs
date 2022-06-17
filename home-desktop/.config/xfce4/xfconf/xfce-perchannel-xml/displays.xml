@@ -46,7 +46,7 @@
       <property name="Reflection" type="string" value="0"/>
       <property name="Primary" type="bool" value="true"/>
       <property name="Position" type="empty">
-        <property name="X" type="int" value="0"/>
+        <property name="X" type="int" value="1920"/>
         <property name="Y" type="int" value="0"/>
       </property>
       <property name="EDID" type="string" value="75941815b84270e2442b5436c9d7f159ac6db594"/>
@@ -71,14 +71,14 @@
       <property name="Reflection" type="string" value="0"/>
       <property name="Primary" type="bool" value="false"/>
       <property name="Position" type="empty">
-        <property name="X" type="int" value="1920"/>
+        <property name="X" type="int" value="0"/>
         <property name="Y" type="int" value="0"/>
       </property>
       <property name="EDID" type="string" value="c9ac1dc8969db004feeb17059bddb49b54eba5b9"/>
     </property>
   </property>
   <property name="Notify" type="bool" value="true"/>
-  <property name="ActiveProfile" type="string" value="296d726a62673b164000abbd30fd60b2ee584d45"/>
+  <property name="ActiveProfile" type="string" value="70f8bb9a8a5393ef080507a89e4b98d139000d65"/>
   <property name="Fallback" type="empty">
     <property name="eDP-1" type="string" value="Laptop">
       <property name="Active" type="bool" value="true"/>
@@ -89,7 +89,7 @@
       <property name="Reflection" type="string" value="0"/>
       <property name="Primary" type="bool" value="false"/>
       <property name="Position" type="empty">
-        <property name="X" type="int" value="1920"/>
+        <property name="X" type="int" value="0"/>
         <property name="Y" type="int" value="0"/>
       </property>
     </property>
@@ -102,7 +102,7 @@
       <property name="Reflection" type="string" value="0"/>
       <property name="Primary" type="bool" value="true"/>
       <property name="Position" type="empty">
-        <property name="X" type="int" value="0"/>
+        <property name="X" type="int" value="1920"/>
         <property name="Y" type="int" value="0"/>
       </property>
     </property>
@@ -135,7 +135,9 @@
       </property>
     </property>
   </property>
-  <property name="296d726a62673b164000abbd30fd60b2ee584d45" type="string" value="Monitor left of laptop">
+  <property name="AutoEnableProfiles" type="bool" value="true"/>
+  <property name="IdentityPopups" type="bool" value="false"/>
+  <property name="70f8bb9a8a5393ef080507a89e4b98d139000d65" type="string" value="Home">
     <property name="eDP-1" type="string" value="Laptop">
       <property name="Active" type="bool" value="true"/>
       <property name="EDID" type="string" value="c9ac1dc8969db004feeb17059bddb49b54eba5b9"/>
@@ -145,7 +147,7 @@
       <property name="Reflection" type="string" value="0"/>
       <property name="Primary" type="bool" value="false"/>
       <property name="Position" type="empty">
-        <property name="X" type="int" value="1920"/>
+        <property name="X" type="int" value="0"/>
         <property name="Y" type="int" value="0"/>
       </property>
     </property>
@@ -158,11 +160,9 @@
       <property name="Reflection" type="string" value="0"/>
       <property name="Primary" type="bool" value="true"/>
       <property name="Position" type="empty">
-        <property name="X" type="int" value="0"/>
+        <property name="X" type="int" value="1920"/>
         <property name="Y" type="int" value="0"/>
       </property>
     </property>
   </property>
-  <property name="AutoEnableProfiles" type="bool" value="true"/>
-  <property name="IdentityPopups" type="bool" value="false"/>
 </channel>
