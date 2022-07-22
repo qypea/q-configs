@@ -31,3 +31,6 @@ set showcmd        " Show (partial) command in status line.
 set showmatch      " Show matching brackets.
 set autowrite      " Automatically save before commands like :next and :make
 set hidden         " Hide buffers when they are abandoned
+
+" Disable c/cpp from continuing // comments on the next line
+au Filetype c,cpp setlocal comments-=:// comments+=f://
