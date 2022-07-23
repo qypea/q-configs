@@ -2,3 +2,5 @@
 compile-cache
 packages
 blob-store
+nohup.out
+storage
