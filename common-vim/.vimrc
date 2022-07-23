@@ -14,6 +14,22 @@ highlight SpellCap cterm=underline
 
 set wildmode=longest,list
 
+" Plug automatic plugin script
+if !filereadable(expand('~/.vim/plug.vim'))
+    silent !curl -fLo ~/.vim/plug.vim
+        \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+endif
+source ~/.vim/plug.vim
+call plug#begin('~/.vim.plugged')
+Plug 'prabirshrestha/vim-lsp'
+Plug 'ycm-core/YouCompleteMe'
+" Note to self:
+" :PlugInstall to install each of these
+" Youcompleteme also needs:
+" cd ~/.vim.plugged/YouCompleteMe
+" python3 ./install.py
+call plug#end()
+
 if filereadable(".dwbuild")
     set makeprg=./.dwbuild
 endif
