@@ -1,12 +1,12 @@
 source ~/.vim/lsp.vim
 
-if executable('clangd')
-    augroup lsp_clangd
+if executable('pylsp')
+    augroup lsp_pylsp
         autocmd!
         autocmd User lsp_setup call lsp#register_server({
-            \ 'name': 'clangd',
-            \ 'cmd': {server_info->['clangd']},
-            \ 'whitelist': ['c', 'cpp'],
+            \ 'name': 'pylsp',
+            \ 'cmd': {server_info->['pylsp']},
+            \ 'whitelist': ['python'],
             \ })
     augroup end
 endif
