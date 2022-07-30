@@ -10,7 +10,7 @@ let g:lsp_diagnostics_highlights_enabled = 1
 let g:lsp_diagnostics_highlights_insert_mode_enabled = 0
 let g:lsp_diagnostics_signs_enabled = 0
 let g:lsp_document_code_action_signs_enabled = 0
-let g:lsp_semantic_enabled = 0
+let g:lsp_semantic_enabled = 1
 highlight link LspErrorHighlight Error
 highlight link LspWarningHighlight Error
 highlight LspInformationHighlight None
