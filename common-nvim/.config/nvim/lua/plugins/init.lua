@@ -31,10 +31,4 @@ return {
             })
         end,
     },
-    {
-        -- Render markdown files with Glow command
-        "ellisonleao/glow.nvim",
-        cmd = "Glow",
-        config = true,
-    }
 }
