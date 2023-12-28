@@ -2,7 +2,7 @@
 
 set -e
 
-clang-format-8 -style=file -i $(git ls-files *.?pp)
+clang-format -style=file -i $(git ls-files *.?pp *.c *.h)
 
 mkdir -p build
 cd build
