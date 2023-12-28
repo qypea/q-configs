@@ -44,6 +44,7 @@ require("lazy").setup({
     'hrsh7th/nvim-cmp',
     'hrsh7th/cmp-nvim-lsp',
     'folke/trouble.nvim',
+    'lewis6991/gitsigns.nvim',
 })
 
 require('nvim-lastplace').setup {
@@ -91,3 +92,11 @@ cmp.setup {
     { name = 'nvim_lsp' },
   },
 }
+
+require('gitsigns').setup({
+    current_line_blame = true,
+    current_line_blame_opts = {
+        virt_text_pos = 'right_align',
+        delay = 100,
+    }
+})
