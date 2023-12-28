@@ -1,29 +1,7 @@
--- Migrated in vim options
-vim.opt.mouse = ""
-vim.opt.signcolumn = 'no'
-vim.opt.number = true
-vim.opt.hlsearch = true
-vim.opt.wildmode = 'longest,list'
-vim.opt.showcmd = true
-vim.opt.autowrite = true
-vim.opt.makeprg = './.dwbuild'
-vim.api.nvim_command('filetype plugin indent on')
+-- Basic editor configuration
+require("editor")
 
--- Spaces, 4 wide with tab char
-vim.opt.expandtab = true
-vim.opt.tabstop = 4
-vim.opt.shiftwidth = 4
-
--- Spell check underlining
-vim.opt.spell = true
-vim.api.nvim_command('highlight SpellBad None')
-vim.api.nvim_command('highlight SpellCap None')
-vim.api.nvim_command('highlight SpellLocal None')
-vim.api.nvim_command('highlight SpellRare None')
-vim.api.nvim_command('highlight SpellBad cterm=underline')
-vim.api.nvim_command('highlight SpellCap cterm=underline')
-
--- Lazy setup
+-- Lazy plugin manager
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
     vim.fn.system({
