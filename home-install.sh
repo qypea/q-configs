@@ -4,7 +4,7 @@ STOWCMD="stow --target=$HOME"
 
 $STOWCMD common-bin
 $STOWCMD common-screen
-$STOWCMD common-vim
+$STOWCMD common-nvim
 
 $STOWCMD home-atom
 $STOWCMD home-bin

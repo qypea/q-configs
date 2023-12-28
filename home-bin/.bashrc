@@ -10,8 +10,8 @@ source /etc/skel/.bashrc
 # export SYSTEMD_PAGER=
 
 # User specific aliases and functions
-alias vi=vim
-export EDITOR=vim
+alias vi=nvim
+export EDITOR=nvim
 export export PROMPT_DIRTRIM=2
 
 export JAVA_HOME=/usr/java/jdk1.8.0_45
