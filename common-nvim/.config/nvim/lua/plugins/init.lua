@@ -31,4 +31,11 @@ return {
             })
         end,
     },
+    {
+        -- Themes
+        "EdenEast/nightfox.nvim",
+        config = function()
+            vim.api.nvim_command('colorscheme carbonfox')
+        end,
+    },
 }
