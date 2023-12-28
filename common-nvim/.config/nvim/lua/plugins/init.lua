@@ -38,4 +38,9 @@ return {
             vim.api.nvim_command('colorscheme carbonfox')
         end,
     },
+    {
+        -- Trouble command tray
+        'folke/trouble.nvim',
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+    },
 }
