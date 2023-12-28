@@ -40,6 +40,8 @@ return {
     },
     {
         -- Trouble command tray
+        -- For fancy icons install https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/CommitMono.zip
+        -- and set it as the font in the console
         'folke/trouble.nvim',
         dependencies = { "nvim-tree/nvim-web-devicons" },
     },
