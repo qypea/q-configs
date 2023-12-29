@@ -24,7 +24,7 @@ return {
                 }),
                 sources = {
                     { name = "neorg" },
-                    { name = "lsp_zero" },
+                    { name = "nvim_lsp" },
                 },
             })
         end
