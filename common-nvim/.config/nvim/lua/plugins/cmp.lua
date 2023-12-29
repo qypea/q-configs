@@ -21,7 +21,11 @@ return {
                     -- Super tab
                     ['<Tab>'] = cmp_action.luasnip_supertab(),
                     ['<S-Tab>'] = cmp_action.luasnip_shift_supertab(),
-                })
+                }),
+                sources = {
+                    { name = "neorg" },
+                    { name = "lsp_zero" },
+                },
             })
         end
     },

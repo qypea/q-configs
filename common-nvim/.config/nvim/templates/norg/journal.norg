@@ -1,0 +1,13 @@
+@document.meta
+title: {TITLE}
+description:
+authors: {AUTHOR}
+categories:
+created: {TODAY}
+updated: {TODAY}
+version: 1.0.0
+@end
+
+* {TITLE}
+  - {{:{YESTERDAY}:}}[Yesterday] - {{:{TOMORROW}:}}[Tomorrow]
+  - {CURSOR}
