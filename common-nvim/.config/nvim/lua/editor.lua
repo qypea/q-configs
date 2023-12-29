@@ -7,6 +7,8 @@ vim.opt.wildmode = 'longest,list'
 vim.opt.showcmd = true
 vim.opt.autowrite = true
 vim.opt.makeprg = './.dwbuild'
+vim.opt.autoread = true
+vim.opt.ttyfast = true
 
 -- Spell check underlining
 vim.opt.spell = true
