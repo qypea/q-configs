@@ -51,6 +51,8 @@ return {
             local null_ls = require("null-ls")
             return {
                 sources = {
+                    -- Shell linting
+                    null_ls.builtins.diagnostics.shellcheck,
                     -- Python Styling
                     null_ls.builtins.diagnostics.pydocstyle.with({
                         method = null_ls.methods.DIAGNOSTICS_ON_SAVE,
