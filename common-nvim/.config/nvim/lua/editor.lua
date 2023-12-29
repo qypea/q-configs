@@ -9,6 +9,7 @@ vim.opt.autowrite = true
 vim.opt.makeprg = './.dwbuild'
 vim.opt.autoread = true
 vim.opt.ttyfast = true
+vim.opt.foldenable = false
 
 -- Spell check underlining
 vim.opt.spell = true
