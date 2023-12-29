@@ -4,3 +4,7 @@ ExtraWhitespace
 whitespace
 nvim
 github
+linters
+configs
+LSP
+lua

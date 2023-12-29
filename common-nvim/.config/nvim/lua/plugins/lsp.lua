@@ -11,7 +11,7 @@ return {
             local lsp_zero = require('lsp-zero')
             lsp_zero.extend_lspconfig()
 
-            lsp_zero.on_attach(function(client, bufnr)
+            lsp_zero.on_attach(function(_client, bufnr)
                 lsp_zero.default_keymaps({ buffer = bufnr })
 
                 -- Autoformat on save
@@ -21,6 +21,13 @@ return {
             -- Specific language servers
             require('lspconfig').lua_ls.setup(lsp_zero.nvim_lua_ls({
                 cmd = { "/home/q/.config/lua-language-server-3.7.3-linux-x64/bin/lua-language-server" },
+                settings = {
+                    Lua = {
+                        diagnostics = {
+                            unusedLocalExclude = { "_*" },
+                        }
+                    }
+                }
             }))
             require('lspconfig').clangd.setup({ capabilities = lsp_zero.get_capabilities() })
             require('lspconfig').pylsp.setup({
