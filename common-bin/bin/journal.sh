@@ -5,5 +5,5 @@ set -u
 
 datestamp="$(date +%Y-%m-%d_%A)"
 
-cd ~/notes/journal
-nvim ${datestamp}.norg
+cd ~/notes
+nvim journal/${datestamp}.norg
