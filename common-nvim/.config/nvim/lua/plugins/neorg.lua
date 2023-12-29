@@ -53,6 +53,12 @@ return {
                 command = "Neorg templates load journal",
                 pattern = { "*/journal/*.norg" },
             })
+
+            vim.api.nvim_create_user_command("Dwtasks",
+                function(opts)
+                    require("telescope.builtin").grep_string({ search = "( )" })
+                end,
+                {})
         end,
     },
 }
