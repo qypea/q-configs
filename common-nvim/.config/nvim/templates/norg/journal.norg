@@ -2,12 +2,25 @@
 title: {TITLE}
 description:
 authors: {AUTHOR}
-categories:
+categories: journal
 created: {TODAY}
 updated: {TODAY}
 version: 1.0.0
 @end
 
-* {TITLE}
-  - {{:{YESTERDAY}:}}[Yesterday] - {{:{TOMORROW}:}}[Tomorrow]
-  - {CURSOR}
+* Morning
+  - How do I feel this morning? {CURSOR}
+  - How is my back this morning?
+  - How are my teeth this morning?
+  - Is there a song in my heart?
+
+* Plan for the day
+  - 
+
+* Activities
+  - 
+
+* Evening
+  - How do I feel this evening?
+  - How is my back this evening?
+  - How are my teeth this evening?
