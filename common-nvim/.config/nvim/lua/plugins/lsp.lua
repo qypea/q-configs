@@ -58,6 +58,10 @@ return {
             local null_ls = require("null-ls")
             return {
                 sources = {
+                    -- Yaml linting
+                    null_ls.builtins.diagnostics.yamllint,
+                    -- Json linting
+                    null_ls.builtins.diagnostics.jsonlint,
                     -- Shell linting
                     null_ls.builtins.diagnostics.shellcheck,
                     -- Python Styling
