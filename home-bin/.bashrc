@@ -20,6 +20,7 @@ export NPM_PACKAGES="$HOME/.npm"
 export PATH="$NPM_PACKAGES/bin:$PATH"
 export NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
 
+export PATH="$PATH:$HOME/.cargo/bin"
 export PATH="$PATH:$HOME/bin"
 
 ssh-add .ssh/id_rsa 2>>/dev/null

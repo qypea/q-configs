@@ -47,6 +47,12 @@ return {
                     }
                 }
             })
+            require('lspconfig').beancount.setup({
+                capabilities = lsp_zero.get_capabilities(),
+                init_options = {
+                    journal_file = "/home/q/Documents/beancount/main.beancount",
+                }
+            })
         end
     },
     {
