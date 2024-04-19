@@ -28,3 +28,7 @@ ssh-add .ssh/id_rsa 2>>/dev/null
 export ssbMyId='@PZjQKGbh9KrWHAp1lo9nH/WXqGLp5rpqpVYLccJLkE4=.ed25519'
 export ssbPubId2018='@1sw77BWBwCzMlQuPG0YkZw8uiHRpEeBe5uLjzXGY36w=.ed25519'
 export ssbPubId='@6lOh+rLq4MQubPQoKenbB9ipq75NVc2FAjy30MTc08o=.ed25519'
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
