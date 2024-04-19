@@ -6,7 +6,12 @@ set -u
 clear
 title.sh Journal
 
-datestamp="$(date +%Y-%m-%d_%A)"
-
 cd ~/notes
-nvim "journal/${datestamp}.norg"
+
+datestamp="$(date +%Y-%m-%d_%A)"
+filename="journal/${datestamp}.md"
+if ! test -e "${filename}"; then
+    cp ~/.config/nvim/templates/md/journal.md "${filename}"
+fi
+
+nvim "${filename}"
