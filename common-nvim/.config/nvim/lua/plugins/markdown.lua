@@ -13,4 +13,11 @@ return {
         -- Markdown syntax and snippets
         "ixru/nvim-markdown",
     },
+    {
+        -- Due dates in <>
+        "nfrid/due.nvim",
+        config = function()
+            require('due_nvim').setup {}
+        end,
+    },
 }
