@@ -20,6 +20,9 @@ vim.api.nvim_command('highlight SpellRare None')
 vim.api.nvim_command('highlight SpellBad cterm=underline')
 vim.api.nvim_command('highlight SpellCap cterm=underline')
 
+-- Don't start new lines with comments
+vim.api.nvim_command('au FileType * set fo-=c fo-=r fo-=o')
+
 -- Spaces, 4 wide with tab char
 -- TODO: Indent amount based on .files in working copy
 vim.opt.expandtab = true
