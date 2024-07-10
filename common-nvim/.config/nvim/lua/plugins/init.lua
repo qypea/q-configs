@@ -44,7 +44,9 @@ return {
         -- and set it as the font in the console
         'folke/trouble.nvim',
         dependencies = { "nvim-tree/nvim-web-devicons" },
-        opts = {},
+        opts = {
+            focus = true,
+        },
     },
     {
         -- Telescope to grep for stuff
