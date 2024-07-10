@@ -64,4 +64,15 @@ return {
             })
         end
     },
+    {
+        -- Treesitter for advanced formatting etc
+        'nvim-treesitter/nvim-treesitter',
+        config = function()
+            require('nvim-treesitter.configs').setup({
+                highlight = {
+                    enable = true,
+                },
+            })
+        end
+    },
 }
