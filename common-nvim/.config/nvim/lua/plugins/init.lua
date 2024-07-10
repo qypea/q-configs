@@ -54,4 +54,14 @@ return {
             { 'nvim-telescope/telescope-fzf-native.nvim', build = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' },
         },
     },
+    {
+        -- Close quickfix window after a bit
+        'mei28/qfc.nvim',
+        config = function()
+            require('qfc').setup({
+                timeout = 3000,   -- Timeout setting in milliseconds
+                autoclose = true, -- Enable/disable autoclose feature
+            })
+        end
+    },
 }
