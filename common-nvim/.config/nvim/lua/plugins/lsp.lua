@@ -37,6 +37,10 @@ return {
                 }
             }))
             require('lspconfig').clangd.setup({ capabilities = lsp_zero.get_capabilities() })
+            -- Eslint doesn't seem to work as well for me out of the box. Maybe if I were working with existing eslint configs.
+            -- Typescript's language server does jumps and whatnot immediately, so that makes me happy.
+            require('lspconfig').ts_ls.setup({})
+
             require('lspconfig').jsonls.setup({})
             require('lspconfig').pylsp.setup({
                 capabilities = lsp_zero.get_capabilities(),
