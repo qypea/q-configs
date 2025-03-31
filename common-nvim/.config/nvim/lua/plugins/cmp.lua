@@ -3,7 +3,7 @@ return {
         -- Autocompletion
         'hrsh7th/nvim-cmp',
         dependencies = {
-            { 'L3MON4D3/LuaSnip' },
+            { 'L3MON4D3/LuaSnip',         run = "make_install_jsregexp" },
             { 'VonHeikemen/lsp-zero.nvim' },
         },
         config = function()
