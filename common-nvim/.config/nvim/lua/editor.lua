@@ -47,3 +47,6 @@ vim.api.nvim_create_user_command("Dwtasks",
         require("telescope.builtin").grep_string({ search = "[ ]" })
     end,
     {})
+
+-- Turn off logging fron nvim, which fills up disk
+vim.lsp.set_log_level('off')
