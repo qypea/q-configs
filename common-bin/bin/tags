@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 ctags -R -f tags \
         --languages=C,C++ \
