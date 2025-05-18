@@ -9,3 +9,5 @@ sudo nix-channel --update
 nixos-rebuild switch --use-remote-sudo
 
 nix-store --optimise
+
+cp -r /etc/nixos ~/Documents/
