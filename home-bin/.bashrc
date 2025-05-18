@@ -1,6 +1,4 @@
-# .bashrc
-
-force_color_prompt=yes
+#!/usr/bin/env bash
 
 # User specific aliases and functions
 alias vi=nvim
